@@ -1,0 +1,22 @@
+{
+  "name": "@robincsl/single-price-grid-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.8.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^7.0.32",
+    "postcss-modules": "^3.2.2"
+  }
+}
