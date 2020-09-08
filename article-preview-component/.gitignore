@@ -1,0 +1,9 @@
+# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
+*.sketch
+dist
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
