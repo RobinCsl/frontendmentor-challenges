@@ -1,0 +1,9 @@
+- it's not easy to have gradient borders https://css-tricks.com/gradient-borders-in-css/
+- it's not possible to pass a class prop to a Svelte prop (https://github.com/sveltejs/svelte/issues/2870)
+- somehow the live-reloads take about 6-7 seconds, and bundle.css.map is generated... 🤔 😕
+  - managed to remove the generation of bundle.css.map, but it still takes a lot of time, probably due to Tailwind?
+  - somehow it now works under 500ms?! Not sure what I changed.
+- theme switcher with Svelte https://svelte.dev/repl/ed4fef4beceb4b0eb295d1f9fdf3bd62?version=3.6.9
+- setting css values dynamically with Svelte https://gotofritz.net/blog/setting-css-values-dynamically-in-svelte/
+- building an accessible Toggle component https://www.smashingmagazine.com/2017/09/building-inclusive-toggle-buttons/
+- don't forget to use the `group` class to use `group-hover:` in children for Tailwind
