@@ -7,3 +7,4 @@
 - setting css values dynamically with Svelte https://gotofritz.net/blog/setting-css-values-dynamically-in-svelte/
 - building an accessible Toggle component https://www.smashingmagazine.com/2017/09/building-inclusive-toggle-buttons/
 - don't forget to use the `group` class to use `group-hover:` in children for Tailwind
+- extract props from imported Svelte components without re-exporting types with Component["\$\$props_def"]["prop"]

@@ -2,6 +2,88 @@
   import SocialCard from "./SocialCard.svelte";
   import Card from "./Card.svelte";
   import Toggle from "./Toggle.svelte";
+
+  const socialCardData: SocialCard["$$prop_def"]["data"][] = [
+    {
+      handle: "@nathanf",
+      followerCount: "1987",
+      followerLabel: "Followers",
+      numberFollowerToday: 12,
+      socialNetwork: "facebook",
+    },
+    {
+      handle: "@nathanf",
+      followerCount: "1044",
+      followerLabel: "Followers",
+      numberFollowerToday: 99,
+      socialNetwork: "twitter",
+    },
+    {
+      handle: "@realnathanf",
+      followerCount: "11k",
+      followerLabel: "Followers",
+      numberFollowerToday: 1099,
+      socialNetwork: "instagram",
+    },
+    {
+      handle: "Nathan F.",
+      followerCount: "8239",
+      followerLabel: "Subscribers",
+      numberFollowerToday: -144,
+      socialNetwork: "youtube",
+    },
+  ];
+
+  const todaysOverviewData: Card["$$prop_def"]["data"][] = [
+    {
+      label: "Page Views",
+      metric: "87",
+      variationInPercent: 3,
+      socialNetwork: "facebook",
+    },
+    {
+      label: "Likes",
+      metric: "52",
+      variationInPercent: -2,
+      socialNetwork: "facebook",
+    },
+    {
+      label: "Likes",
+      metric: "5462",
+      variationInPercent: 2257,
+      socialNetwork: "instagram",
+    },
+    {
+      label: "Profile Views",
+      metric: "52k",
+      variationInPercent: 1375,
+      socialNetwork: "instagram",
+    },
+    {
+      label: "Retweets",
+      metric: "117",
+      variationInPercent: 303,
+      socialNetwork: "twitter",
+    },
+    {
+      label: "Likes",
+      metric: "507",
+      variationInPercent: 553,
+      socialNetwork: "twitter",
+    },
+    {
+      label: "Likes",
+      metric: "107",
+      variationInPercent: -19,
+      socialNetwork: "youtube",
+    },
+    {
+      label: "Total Views",
+      metric: "1407",
+      variationInPercent: -12,
+      socialNetwork: "youtube",
+    },
+  ];
 </script>
 
 <style global lang="postcss">
@@ -39,44 +121,17 @@
 
   <article
     class="grid grid-cols-1 place-items-center md:grid-cols-4 gap-5 mb-10">
-    <SocialCard
-      data={{ handle: '@nathanf', followerCount: '1987', followerLabel: 'Followers', numberFollowerToday: 12, socialNetwork: 'facebook' }} />
-
-    <SocialCard
-      data={{ handle: '@nathanf', followerCount: '1044', followerLabel: 'Followers', numberFollowerToday: 99, socialNetwork: 'twitter' }} />
-    <SocialCard
-      data={{ handle: '@realnathanf', followerCount: '11k', followerLabel: 'Followers', numberFollowerToday: 1099, socialNetwork: 'instagram' }} />
-
-    <SocialCard
-      data={{ handle: 'Nathan F.', followerCount: '8239', followerLabel: 'Subscribers', numberFollowerToday: -144, socialNetwork: 'youtube' }} />
+    {#each socialCardData as data}
+      <SocialCard {data} />
+    {/each}
   </article>
 
   <article>
     <h2 class="text-primary text-xl font-bold mb-5">Overview - Today</h2>
     <div class="grid grid-cols-1 place-items-center md:grid-cols-4 gap-5">
-      <Card
-        data={{ label: 'Page Views', metric: '87', variationInPercent: 3, socialNetwork: 'facebook' }} />
-
-      <Card
-        data={{ label: 'Likes', metric: '52', variationInPercent: -2, socialNetwork: 'facebook' }} />
-
-      <Card
-        data={{ label: 'Likes', metric: '5462', variationInPercent: 2257, socialNetwork: 'instagram' }} />
-
-      <Card
-        data={{ label: 'Profile Views', metric: '52k', variationInPercent: 1375, socialNetwork: 'instagram' }} />
-
-      <Card
-        data={{ label: 'Retweets', metric: '117', variationInPercent: 303, socialNetwork: 'twitter' }} />
-
-      <Card
-        data={{ label: 'Likes', metric: '507', variationInPercent: 553, socialNetwork: 'twitter' }} />
-
-      <Card
-        data={{ label: 'Likes', metric: '107', variationInPercent: -19, socialNetwork: 'youtube' }} />
-
-      <Card
-        data={{ label: 'Total Views', metric: '1407', variationInPercent: -12, socialNetwork: 'youtube' }} />
+      {#each todaysOverviewData as data}
+        <Card {data} />
+      {/each}
     </div>
   </article>
 </main>
