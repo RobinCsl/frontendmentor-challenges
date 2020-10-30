@@ -52,17 +52,17 @@
   }
 </style>
 
-<div class={'container ' + data.socialNetwork}>
-  <p class="text-secondary font-bold text-xs mb-2">
+<article class={'container ' + data.socialNetwork}>
+  <h3 class="text-secondary font-bold text-xs mb-2">
     <img
       class="inline mr-1"
       src={`/icon-${data.socialNetwork}.svg`}
       alt={data.socialNetwork} />
     {data.handle}
-  </p>
+  </h3>
   <p class="text-primary text-5xl font-bold -mb-2">{data.followerCount}</p>
   <p class="followers mb-4 uppercase  text-secondary text-xs font-thin">
     {data.followerLabel}
   </p>
   <UpOrDown quantity={data.numberFollowerToday}>Today</UpOrDown>
-</div>
+</article>

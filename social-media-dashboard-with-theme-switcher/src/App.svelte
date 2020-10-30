@@ -37,7 +37,7 @@
     </div>
   </header>
 
-  <section
+  <article
     class="grid grid-cols-1 place-items-center md:grid-cols-4 gap-5 mb-10">
     <SocialCard
       data={{ handle: '@nathanf', followerCount: '1987', followerLabel: 'Followers', numberFollowerToday: 12, socialNetwork: 'facebook' }} />
@@ -49,32 +49,34 @@
 
     <SocialCard
       data={{ handle: 'Nathan F.', followerCount: '8239', followerLabel: 'Subscribers', numberFollowerToday: -144, socialNetwork: 'youtube' }} />
-  </section>
+  </article>
 
-  <h2 class="text-primary text-xl font-bold mb-5">Overview - Today</h2>
-  <section class="grid grid-cols-1 place-items-center md:grid-cols-4 gap-5">
-    <Card
-      data={{ label: 'Page Views', metric: '87', variationInPercent: 3, socialNetwork: 'facebook' }} />
+  <article>
+    <h2 class="text-primary text-xl font-bold mb-5">Overview - Today</h2>
+    <div class="grid grid-cols-1 place-items-center md:grid-cols-4 gap-5">
+      <Card
+        data={{ label: 'Page Views', metric: '87', variationInPercent: 3, socialNetwork: 'facebook' }} />
 
-    <Card
-      data={{ label: 'Likes', metric: '52', variationInPercent: -2, socialNetwork: 'facebook' }} />
+      <Card
+        data={{ label: 'Likes', metric: '52', variationInPercent: -2, socialNetwork: 'facebook' }} />
 
-    <Card
-      data={{ label: 'Likes', metric: '5462', variationInPercent: 2257, socialNetwork: 'instagram' }} />
+      <Card
+        data={{ label: 'Likes', metric: '5462', variationInPercent: 2257, socialNetwork: 'instagram' }} />
 
-    <Card
-      data={{ label: 'Profile Views', metric: '52k', variationInPercent: 1375, socialNetwork: 'instagram' }} />
+      <Card
+        data={{ label: 'Profile Views', metric: '52k', variationInPercent: 1375, socialNetwork: 'instagram' }} />
 
-    <Card
-      data={{ label: 'Retweets', metric: '117', variationInPercent: 303, socialNetwork: 'twitter' }} />
+      <Card
+        data={{ label: 'Retweets', metric: '117', variationInPercent: 303, socialNetwork: 'twitter' }} />
 
-    <Card
-      data={{ label: 'Likes', metric: '507', variationInPercent: 553, socialNetwork: 'twitter' }} />
+      <Card
+        data={{ label: 'Likes', metric: '507', variationInPercent: 553, socialNetwork: 'twitter' }} />
 
-    <Card
-      data={{ label: 'Likes', metric: '107', variationInPercent: -19, socialNetwork: 'youtube' }} />
+      <Card
+        data={{ label: 'Likes', metric: '107', variationInPercent: -19, socialNetwork: 'youtube' }} />
 
-    <Card
-      data={{ label: 'Total Views', metric: '1407', variationInPercent: -12, socialNetwork: 'youtube' }} />
-  </section>
+      <Card
+        data={{ label: 'Total Views', metric: '1407', variationInPercent: -12, socialNetwork: 'youtube' }} />
+    </div>
+  </article>
 </main>
